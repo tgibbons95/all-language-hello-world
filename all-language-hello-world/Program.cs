@@ -23,7 +23,8 @@ class Program
             .AddSingleton<IHelloWorld, HelloWorldPerl>()
             .AddSingleton<IHelloWorld, HelloWorldPhp>()
             .AddSingleton<IHelloWorld, HelloWorldPython>()
-            .AddSingleton<IHelloWorld, HelloWorldRust>();
+            .AddSingleton<IHelloWorld, HelloWorldRust>()
+            .AddSingleton<IHelloWorld, HelloWorldSql>();
 
         if (apiKey != null)
         {
