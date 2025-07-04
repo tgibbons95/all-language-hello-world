@@ -10,7 +10,7 @@ class Program
             .AddSingleton<IHelloWorld, HelloWorldCpp>()
             .BuildServiceProvider();
 
-        // Resolve and use NotificationManager
+        // Get an enumerable of all IHelloWorld interface implementations
         var helloWorldImpls = serviceProvider.GetServices<IHelloWorld>();
         foreach (var helloWorldImpl in helloWorldImpls)
         {
