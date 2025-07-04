@@ -4,6 +4,16 @@ class Program
 {
     static void Main(string[] args)
     {
+        // Prerequisites for Javonet
+        var apiKey = Environment.GetEnvironmentVariable("JavonetApiKey");
+        if (apiKey != null)
+        {
+            Javonet.Netcore.Sdk.Javonet.Activate(apiKey);
+        } else
+        {
+            Console.WriteLine("Warning: No JavonetApiKey env variable. Skipping javonet required languages.");
+        }
+
         // Set up DI container
         var serviceCollection = new ServiceCollection()
             .AddSingleton<IHelloWorld, HelloWorldAssembly>()
@@ -12,6 +22,11 @@ class Program
             .AddSingleton<IHelloWorld, HelloWorldCSharp>()
             .AddSingleton<IHelloWorld, HelloWorldPython>()
             .AddSingleton<IHelloWorld, HelloWorldRust>();
+
+        if (apiKey != null)
+        {
+            serviceCollection = serviceCollection.AddSingleton<IHelloWorld, HelloWorldJava>();
+        }
 
         var serviceProvider = serviceCollection.BuildServiceProvider();
 
