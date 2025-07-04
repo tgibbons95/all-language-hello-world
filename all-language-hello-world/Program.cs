@@ -27,6 +27,7 @@ class Program
         if (apiKey != null)
         {
             serviceCollection = serviceCollection.AddSingleton<IHelloWorld, HelloWorldJava>();
+            serviceCollection = serviceCollection.AddSingleton<IHelloWorld, HelloWorldJs>();
         }
 
         var serviceProvider = serviceCollection.BuildServiceProvider();
