@@ -21,6 +21,7 @@ class Program
             .AddSingleton<IHelloWorld, HelloWorldCpp>()
             .AddSingleton<IHelloWorld, HelloWorldCSharp>()
             .AddSingleton<IHelloWorld, HelloWorldPerl>()
+            .AddSingleton<IHelloWorld, HelloWorldPhp>()
             .AddSingleton<IHelloWorld, HelloWorldPython>()
             .AddSingleton<IHelloWorld, HelloWorldRust>();
 

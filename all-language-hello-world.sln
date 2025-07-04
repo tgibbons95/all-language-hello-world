@@ -73,6 +73,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "js", "js", "{DF93AD81-39D4-
 		languages\js\HelloWorld.js = languages\js\HelloWorld.js
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "php", "php", "{A668B7F8-C54B-4D23-BBB5-180129E035E9}"
+	ProjectSection(SolutionItems) = preProject
+		languages\php\build_and_install.ps1 = languages\php\build_and_install.ps1
+		languages\php\HelloWorld.php = languages\php\HelloWorld.php
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -97,6 +103,7 @@ Global
 		{498A5371-5941-49CD-BB3E-2A830F56D108} = {D7768625-13DF-4C57-A97D-95A651622AFF}
 		{A5823ACF-0D1F-45BB-B435-8FA4397D5776} = {D7768625-13DF-4C57-A97D-95A651622AFF}
 		{DF93AD81-39D4-44D0-A5A5-3C40AC5E4388} = {D7768625-13DF-4C57-A97D-95A651622AFF}
+		{A668B7F8-C54B-4D23-BBB5-180129E035E9} = {D7768625-13DF-4C57-A97D-95A651622AFF}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C52499E5-1C26-4D2C-B752-C4416C247347}
