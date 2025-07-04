@@ -1,0 +1,1 @@
+SELECT Text FROM Messages WHERE Id = 1
