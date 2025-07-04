@@ -17,4 +17,6 @@ public class HelloWorldRust : IHelloWorld
 
         return message;
     }
+
+    public bool IsEnabled() { return true; }
 }

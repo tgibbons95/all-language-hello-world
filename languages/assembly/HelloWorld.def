@@ -1,0 +1,3 @@
+LIBRARY HelloWorldAssembly
+EXPORTS
+    GetMessage

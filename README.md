@@ -4,7 +4,7 @@ One executable integrated to say hello world in as many languages as possible
 ## Main project
 This repository contains one main driver project in C# under all-language-hello-world
 
-A hello world interface is made with one method GetHelloWorld() to return a string. Each new language that gets added to this project will implement this interface and call code for that language to receive the "Hello World - {language}" string 
+A hello world interface is made with the main method GetHelloWorld() to return a string and an IsEnabled() method to disable any languages not desired to run. Each new language that gets added to this project will implement this interface and call code for that language to receive the "Hello World - {language}" string 
 
 ## Sub projects
 A languages directory has been made to split out every side project for the various languages. All relevant code for a new language should be under its respective directory. For example, C++ code is under the cpp directory.
@@ -21,3 +21,6 @@ Every language directory should have a build_and_install.ps1 script inside of it
 - C++ uses CMake 3.10 (and expects it to be available in environment path for building)
 - Rust uses Cargo (and expects it to be available in environment path for building)
 - Python requires python in the environment path at runtime
+- Assembly 
+  - Built for x64 only
+  - Build script uses visual studio community path to ml64.exe and link.exe which will vary by installation, but would have to be manually changed at the moment
