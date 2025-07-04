@@ -6,8 +6,9 @@ class Program
     {
         // Set up DI container
         var serviceProvider = new ServiceCollection()
-            .AddSingleton<IHelloWorld, HelloWorldCSharp>()
             .AddSingleton<IHelloWorld, HelloWorldCpp>()
+            .AddSingleton<IHelloWorld, HelloWorldCSharp>()
+            .AddSingleton<IHelloWorld, HelloWorldPython>()
             .AddSingleton<IHelloWorld, HelloWorldRust>()
             .BuildServiceProvider();
 

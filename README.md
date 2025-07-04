@@ -18,5 +18,6 @@ Every language directory should have a build_and_install.ps1 script inside of it
 
 ## Prerequisites
 - C# uses .NET 8.0
-- C++ uses CMake 3.10 (and expects it to be available in environment path)
-- Rust uses Cargo (and expects it to be available in environment path)
+- C++ uses CMake 3.10 (and expects it to be available in environment path for building)
+- Rust uses Cargo (and expects it to be available in environment path for building)
+- Python requires python in the environment path at runtime
