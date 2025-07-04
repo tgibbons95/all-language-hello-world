@@ -54,6 +54,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "c", "c", "{77ED70B7-25E0-42
 		languages\c\HelloWorld.c = languages\c\HelloWorld.c
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "java", "java", "{498A5371-5941-49CD-BB3E-2A830F56D108}"
+	ProjectSection(SolutionItems) = preProject
+		languages\java\.gitignore = languages\java\.gitignore
+		languages\java\build_and_install.ps1 = languages\java\build_and_install.ps1
+		languages\java\HelloWorldClass.java = languages\java\HelloWorldClass.java
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +82,7 @@ Global
 		{2C0051DD-0BA0-4CEA-8C64-94E57F7C0294} = {D7768625-13DF-4C57-A97D-95A651622AFF}
 		{9A81D2D6-AF9E-48E1-84F6-0BD23455F457} = {2C0051DD-0BA0-4CEA-8C64-94E57F7C0294}
 		{77ED70B7-25E0-4275-85F0-1DD96E2350FB} = {D7768625-13DF-4C57-A97D-95A651622AFF}
+		{498A5371-5941-49CD-BB3E-2A830F56D108} = {D7768625-13DF-4C57-A97D-95A651622AFF}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C52499E5-1C26-4D2C-B752-C4416C247347}

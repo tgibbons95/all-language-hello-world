@@ -11,16 +11,19 @@ A languages directory has been made to split out every side project for the vari
 
 Every language directory should have a build_and_install.ps1 script inside of it. This script will be responsible for building code for the particular language and then copying it to the destination folder provided as an argument. For example, the script for C++ will run CMake to build and install a shared library. It will then copy the built dll to the destination folder.
 
-## How to run
-- Open the all-languages-hello-world.sln and build the main project
-  - Before the build target is built, build-and-install-all-languages.ps1 will be run in powershell which will recursively run all the particular language build scripts and place relevant binaries into the dependencies folder of the main project.
-- Run!
-
 ## Prerequisites
 - C# uses .NET 8.0
-- C++ uses CMake 3.10 (and expects it to be available in environment path for building)
+- C/C++ uses CMake 3.10 (and expects it to be available in environment path for building)
 - Rust uses Cargo (and expects it to be available in environment path for building)
 - Python requires python in the environment path at runtime
 - Assembly 
   - Built for x64 only
   - Build script uses visual studio community path to ml64.exe and link.exe which will vary by installation, but would have to be manually changed at the moment
+- Java requires Java SDK and a Javonet API Key in the environment variable JavonetApiKey
+  - JAVA_HOME env variable must be set and the JAVA_HOME/bin folder must be in the path for building
+  - If api key is missing, java will be skipped at runtime with a warning
+
+## How to run
+- Open the all-languages-hello-world.sln and build the main project
+  - Before the build target is built, build-and-install-all-languages.ps1 will be run in powershell which will recursively run all the particular language build scripts and place relevant binaries into the dependencies folder of the main project.
+- Run!

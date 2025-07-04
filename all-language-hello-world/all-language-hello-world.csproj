@@ -9,6 +9,7 @@
 	</PropertyGroup>
 
 	<ItemGroup>
+		<PackageReference Include="Javonet.Netcore.Sdk" Version="2.5.20" />
 		<PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="9.0.6" />
 	</ItemGroup>
 	<ItemGroup>
@@ -17,6 +18,6 @@
 		</Content>
 	</ItemGroup>
 	<Target Name="RunAlways" BeforeTargets="Build">
-	  <Exec Command="powershell &quot;$(SolutionDir)build-and-install-all-languages.ps1&quot;;" WorkingDirectory="$(SolutionDir)"/>
+	  <Exec Command="powershell &quot;$(SolutionDir)build-and-install-all-languages.ps1&quot;;" WorkingDirectory="$(SolutionDir)" />
 	</Target>
 </Project>
