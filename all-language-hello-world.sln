@@ -78,9 +78,12 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "sql", "sql", "{7BA53131-82B9-4AFB-AD60-D6AC208BCAC5}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "r", "r", "{3361C57A-8FDB-4858-842D-0F835C8A7A68}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "go", "go", "{F7EDA770-DC4A-4819-B2D1-6B7B84287BE6}"
 	ProjectSection(SolutionItems) = preProject
-		languages\r\build_and_install.ps1 = languages\r\build_and_install.ps1
-		languages\r\HelloWorld.r = languages\r\HelloWorld.r
+		languages\go\.gitignore = languages\go\.gitignore
+		languages\go\build_and_install.ps1 = languages\go\build_and_install.ps1
+		languages\go\HelloWorld.go = languages\go\HelloWorld.go
 	EndProjectSection
 EndProject
 Global
@@ -110,6 +113,7 @@ Global
 		{A668B7F8-C54B-4D23-BBB5-180129E035E9} = {D7768625-13DF-4C57-A97D-95A651622AFF}
 		{7BA53131-82B9-4AFB-AD60-D6AC208BCAC5} = {D7768625-13DF-4C57-A97D-95A651622AFF}
 		{3361C57A-8FDB-4858-842D-0F835C8A7A68} = {D7768625-13DF-4C57-A97D-95A651622AFF}
+		{F7EDA770-DC4A-4819-B2D1-6B7B84287BE6} = {D7768625-13DF-4C57-A97D-95A651622AFF}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C52499E5-1C26-4D2C-B752-C4416C247347}

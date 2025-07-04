@@ -26,6 +26,7 @@ Every language directory should have a build_and_install.ps1 script inside of it
 - JavaScript also uses Javonet similar instructions on the API key as in java
 - Php requires php.exe to be in environment path
 - R requires RScript to be in environment path
+- Go requires go installation in environment path
 
 ## How to run
 - Open the all-languages-hello-world.sln and build the main project
