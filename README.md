@@ -13,8 +13,8 @@ Every language directory should have a build_and_install.ps1 script inside of it
 
 ## Prerequisites
 - C# uses .NET 8.0
-- C/C++ uses CMake 3.10 (and expects it to be available in environment path for building)
-- Rust uses Cargo (and expects it to be available in environment path for building)
+- C/C++ uses CMake 3.10 and expects it to be available in environment path for building
+- Rust uses Cargo and expects it to be available in environment path for building
 - Python requires python in the environment path at runtime
 - Assembly 
   - Built for x64 only
@@ -25,6 +25,7 @@ Every language directory should have a build_and_install.ps1 script inside of it
 - Perl requires the perl.exe to be in the environment path which can be installed with Strawberry perl
 - JavaScript also uses Javonet similar instructions on the API key as in java
 - Php requires php.exe to be in environment path
+- R requires RScript to be in environment path
 
 ## How to run
 - Open the all-languages-hello-world.sln and build the main project
