@@ -27,4 +27,6 @@ public class HelloWorldPython : IHelloWorld
             return "Error: Python";
         }
     }
+
+    public bool IsEnabled() { return true; }
 }

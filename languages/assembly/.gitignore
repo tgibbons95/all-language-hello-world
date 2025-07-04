@@ -1,0 +1,41 @@
+# Object and binary files
+*.obj
+*.exe
+*.dll
+*.lib
+*.exp
+
+# Listing and debug files
+*.lst
+*.map
+*.pdb
+*.ilk
+
+# Temporary and intermediate files
+*.tmp
+*.log
+*.bak
+
+# MASM-specific
+*.cod
+*.sym
+
+# NASM-specific
+*.bin
+*.o
+
+# Visual Studio build folders
+[Bb]in/
+[Oo]bj/
+*.suo
+*.user
+*.VC.db
+.vs/
+
+# Ignore backup files
+*~
+*.swp
+*.swo
+
+# Optional: ignore your build output folder
+/build/

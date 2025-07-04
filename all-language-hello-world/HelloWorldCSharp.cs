@@ -4,4 +4,6 @@
     {
         return "Hello World - C#";
     }
+
+    public bool IsEnabled() { return true; }
 }

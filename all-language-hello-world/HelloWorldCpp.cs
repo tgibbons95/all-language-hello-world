@@ -9,4 +9,6 @@ public class HelloWorldCpp : IHelloWorld
     {
         return Marshal.PtrToStringAnsi(GetHelloWorldCpp()) ?? "Error: C++";
     }
+
+    public bool IsEnabled() { return true; }
 }
