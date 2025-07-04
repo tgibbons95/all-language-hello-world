@@ -8,6 +8,7 @@ class Program
         var serviceProvider = new ServiceCollection()
             .AddSingleton<IHelloWorld, HelloWorldCSharp>()
             .AddSingleton<IHelloWorld, HelloWorldCpp>()
+            .AddSingleton<IHelloWorld, HelloWorldRust>()
             .BuildServiceProvider();
 
         // Get an enumerable of all IHelloWorld interface implementations
