@@ -7,6 +7,7 @@ class Program
         // Set up DI container
         var serviceCollection = new ServiceCollection()
             .AddSingleton<IHelloWorld, HelloWorldAssembly>()
+            .AddSingleton<IHelloWorld, HelloWorldC>()
             .AddSingleton<IHelloWorld, HelloWorldCpp>()
             .AddSingleton<IHelloWorld, HelloWorldCSharp>()
             .AddSingleton<IHelloWorld, HelloWorldPython>()
@@ -23,6 +24,5 @@ class Program
                 Console.WriteLine($"{helloWorldImpl.GetHelloWorld()}");
             }
         }
-
     }
 }
