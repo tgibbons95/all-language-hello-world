@@ -1,0 +1,17 @@
+# Ignore build artifacts
+/target/
+
+# Ignore Cargo.lock for libraries (include it for binaries)
+Cargo.lock
+
+# Backup files from rustfmt
+**/*.rs.bk
+
+# Windows debugging files
+*.pdb
+
+# Mutation testing output
+**/mutants.out*/
+
+# IDE-specific files (optional)
+.idea/
