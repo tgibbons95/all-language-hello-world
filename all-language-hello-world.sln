@@ -46,6 +46,14 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{9A81D2D6-AF9
 		languages\rust\src\lib.rs = languages\rust\src\lib.rs
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "c", "c", "{77ED70B7-25E0-4275-85F0-1DD96E2350FB}"
+	ProjectSection(SolutionItems) = preProject
+		languages\c\.gitignore = languages\c\.gitignore
+		languages\c\build_and_install.ps1 = languages\c\build_and_install.ps1
+		languages\c\CMakeLists.txt = languages\c\CMakeLists.txt
+		languages\c\HelloWorld.c = languages\c\HelloWorld.c
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -66,6 +74,7 @@ Global
 		{F0458858-AA90-4E81-A5AF-E7F9D2C1BF81} = {D7768625-13DF-4C57-A97D-95A651622AFF}
 		{2C0051DD-0BA0-4CEA-8C64-94E57F7C0294} = {D7768625-13DF-4C57-A97D-95A651622AFF}
 		{9A81D2D6-AF9E-48E1-84F6-0BD23455F457} = {2C0051DD-0BA0-4CEA-8C64-94E57F7C0294}
+		{77ED70B7-25E0-4275-85F0-1DD96E2350FB} = {D7768625-13DF-4C57-A97D-95A651622AFF}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C52499E5-1C26-4D2C-B752-C4416C247347}
