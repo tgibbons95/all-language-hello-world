@@ -3,7 +3,48 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34622.214
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "all-language-hello-world", "all-language-hello-world\all-language-hello-world.csproj", "{3507EDE7-4C35-4D1A-8189-AD564DFB8B77}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "all-language-hello-world", "all-language-hello-world\all-language-hello-world.csproj", "{3507EDE7-4C35-4D1A-8189-AD564DFB8B77}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "languages", "languages", "{D7768625-13DF-4C57-A97D-95A651622AFF}"
+	ProjectSection(SolutionItems) = preProject
+		build-and-install-all-languages.ps1 = build-and-install-all-languages.ps1
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "assembly", "assembly", "{F25EE596-69E9-4AF8-902B-2C950EFA1BCB}"
+	ProjectSection(SolutionItems) = preProject
+		languages\assembly\.gitignore = languages\assembly\.gitignore
+		languages\assembly\build_and_install.ps1 = languages\assembly\build_and_install.ps1
+		languages\assembly\HelloWorld.asm = languages\assembly\HelloWorld.asm
+		languages\assembly\HelloWorld.def = languages\assembly\HelloWorld.def
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "cpp", "cpp", "{4BB539C2-C7C6-4D94-936A-299BCDD71BD1}"
+	ProjectSection(SolutionItems) = preProject
+		languages\cpp\.gitignore = languages\cpp\.gitignore
+		languages\cpp\build_and_install.ps1 = languages\cpp\build_and_install.ps1
+		languages\cpp\CMakeLists.txt = languages\cpp\CMakeLists.txt
+		languages\cpp\HelloWorld.cpp = languages\cpp\HelloWorld.cpp
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "python", "python", "{F0458858-AA90-4E81-A5AF-E7F9D2C1BF81}"
+	ProjectSection(SolutionItems) = preProject
+		languages\python\build_and_install.ps1 = languages\python\build_and_install.ps1
+		languages\python\HelloWorldPython.py = languages\python\HelloWorldPython.py
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "rust", "rust", "{2C0051DD-0BA0-4CEA-8C64-94E57F7C0294}"
+	ProjectSection(SolutionItems) = preProject
+		languages\rust\.gitignore = languages\rust\.gitignore
+		languages\rust\build_and_install.ps1 = languages\rust\build_and_install.ps1
+		languages\rust\Cargo.lock = languages\rust\Cargo.lock
+		languages\rust\Cargo.toml = languages\rust\Cargo.toml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{9A81D2D6-AF9E-48E1-84F6-0BD23455F457}"
+	ProjectSection(SolutionItems) = preProject
+		languages\rust\src\lib.rs = languages\rust\src\lib.rs
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -18,6 +59,13 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F25EE596-69E9-4AF8-902B-2C950EFA1BCB} = {D7768625-13DF-4C57-A97D-95A651622AFF}
+		{4BB539C2-C7C6-4D94-936A-299BCDD71BD1} = {D7768625-13DF-4C57-A97D-95A651622AFF}
+		{F0458858-AA90-4E81-A5AF-E7F9D2C1BF81} = {D7768625-13DF-4C57-A97D-95A651622AFF}
+		{2C0051DD-0BA0-4CEA-8C64-94E57F7C0294} = {D7768625-13DF-4C57-A97D-95A651622AFF}
+		{9A81D2D6-AF9E-48E1-84F6-0BD23455F457} = {2C0051DD-0BA0-4CEA-8C64-94E57F7C0294}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C52499E5-1C26-4D2C-B752-C4416C247347}

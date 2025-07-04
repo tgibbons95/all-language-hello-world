@@ -22,6 +22,4 @@ if (-not (Test-Path $destinationFolder)) {
     New-Item -Path $destinationFolder -ItemType Directory | Out-Null
 }
 
-echo $destinationFolder
-echo $installPath\bin\HelloWorldCpp.dll
 Copy-Item -Path "$installPath\bin\HelloWorldCpp.dll" -Destination $destinationFolder -Force

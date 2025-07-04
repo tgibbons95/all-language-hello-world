@@ -16,5 +16,7 @@
 			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 		</Content>
 	</ItemGroup>
-
+	<Target Name="RunAlways" BeforeTargets="Build">
+	  <Exec Command="powershell &quot;$(SolutionDir)build-and-install-all-languages.ps1&quot;;" WorkingDirectory="$(SolutionDir)"/>
+	</Target>
 </Project>
