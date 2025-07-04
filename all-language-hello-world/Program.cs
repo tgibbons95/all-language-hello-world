@@ -23,6 +23,7 @@ class Program
             .AddSingleton<IHelloWorld, HelloWorldPerl>()
             .AddSingleton<IHelloWorld, HelloWorldPhp>()
             .AddSingleton<IHelloWorld, HelloWorldPython>()
+            .AddSingleton<IHelloWorld, HelloWorldR>()
             .AddSingleton<IHelloWorld, HelloWorldRust>()
             .AddSingleton<IHelloWorld, HelloWorldSql>();
 
