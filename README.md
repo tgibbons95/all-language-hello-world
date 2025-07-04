@@ -22,6 +22,7 @@ Every language directory should have a build_and_install.ps1 script inside of it
 - Java requires Java SDK and a Javonet API Key in the environment variable JavonetApiKey
   - JAVA_HOME env variable must be set and the JAVA_HOME/bin folder must be in the path for building
   - If api key is missing, java will be skipped at runtime with a warning
+- Perl requires the perl.exe to be in the environment path which can be installed with Strawberry perl
 
 ## How to run
 - Open the all-languages-hello-world.sln and build the main project
