@@ -23,5 +23,6 @@ class Program
                 Console.WriteLine($"{helloWorldImpl.GetHelloWorld()}");
             }
         }
+
     }
 }

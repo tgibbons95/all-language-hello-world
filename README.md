@@ -12,8 +12,8 @@ A languages directory has been made to split out every side project for the vari
 Every language directory should have a build_and_install.ps1 script inside of it. This script will be responsible for building code for the particular language and then copying it to the destination folder provided as an argument. For example, the script for C++ will run CMake to build and install a shared library. It will then copy the built dll to the destination folder.
 
 ## How to run
-- From the root directory, run the top level script build-and-install-all-languages.ps1 which will recursively run all the particular language build scripts and place relevant binaries into the dependencies folder of the main project.
 - Open the all-languages-hello-world.sln and build the main project
+  - Before the build target is built, build-and-install-all-languages.ps1 will be run in powershell which will recursively run all the particular language build scripts and place relevant binaries into the dependencies folder of the main project.
 - Run!
 
 ## Prerequisites
